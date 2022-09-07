@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/sky.css">
+	<style>
+		.wrapenv {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-color: #fe6c61;
+			overflow: hidden;
+		}
+
+		.i-love {
+			position: relative;
+			cursor: pointer;
+		}
+
+		.envelope {
+			position: relative;
+			filter: drop-shadow(0 0 25px rgba(0, 0, 0, .3));
+		}
+
+		.envelope:before {
+			content: "";
+			position: absolute;
+			width: 254px;
+			height: 254px;
+			background-color: #ff9494;
+			transform: rotate(-45deg);
+			border-radius: 0 15px 0 0;
+			left: -37px;
+			top: -82px;
+		}
+
+		.envelope:after {
+			content: "";
+			position: absolute;
+			background-color: #ff9494;
+			width: 360px;
+			height: 225px;
+			left: -90px;
+			top: 45px;
+		}
+
+		.heart {
+			position: relative;
+			background-color: #e01911;
+			display: inline-block;
+			height: 180px;
+			top: 90px;
+			left: 0;
+			transform: rotate(-45deg);
+			width: 180px;
+			filter: drop-shadow(0 -10px 25px rgba(0, 0, 0, .3));
+			transition: .5s;
+		}
+
+		.heart:before,
+		.heart:after {
+			content: "";
+			background-color: #e01911;
+			border-radius: 50%;
+			height: 180px;
+			width: 180px;
+			position: absolute;
+		}
+
+		.heart:before {
+			top: -100px;
+			left: 0;
+		}
+
+		.heart:after {
+			left: 100px;
+			top: 0;
+		}
+
+		.front {
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-right: 190px solid #fbd2d2;
+			border-top: 113px solid transparent;
+			border-bottom: 113px solid transparent;
+			top: 44px;
+			left: 80px;
+			z-index: 4;
+		}
+
+		.front:before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-left: 190px solid #fbd2d2;
+			border-top: 113px solid transparent;
+			border-bottom: 113px solid transparent;
+			top: -113px;
+			left: -170px;
+		}
+
+		.front:after {
+			width: 0;
+			height: 0;
+			position: absolute;
+			content: "";
+			border-bottom: 150px solid #fce7e9;
+			border-right: 180px solid transparent;
+			border-left: 180px solid transparent;
+			top: -36px;
+			left: -170px;
+		}
+
+		.text {
+			position: absolute;
+			font-family: arial;
+			letter-spacing: 4px;
+			text-align: center;
+			font-size: 13.5px;
+			color: white;
+			z-index: 2;
+			top: 110px;
+			left: 15px;
+			transition: .5s;
+		}
+
+		.i-love:hover .heart {
+			transform: translateY(-50px) rotate(-45deg);
+		}
+
+		.i-love:hover .text {
+			transform: translateY(-50px);
+		}
+
+		.text2 {
+			position: absolute;
+			top: 270px;
+			color: white;
+			font-family: brush script mt;
+			/* text-align: center; */
+			padding-left: 0;
+			/* width: 235px; */
+			font-size: 25px;
+			background-color: #fe6c61;
+		}
+	</style>
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h3>
+					Hi, Kamu gimana kabarnya &#x1F49B;?
+				</h3>
+
+				<br>
+				<img src="img/20220305_155931.jpg" width="278" height="338">
+			</section>
+			<section>
+				aku harap kamu dalam keadaan baik ya,...
+				dua minggu belakangan ini aku merenungkan banyak hal, <strong>ternyata banyak pelajaran bermakna yang
+					aku dapat setelah aku bisa bercerita dengan diriku sendiri</strong>
+			</section>
+			<section>
+				<p>Aku sadar akan beberapa hal dari diriku yang membuat hubungan kita jadi begini, dan aku sangat
+					bersyukur bisa dikasih ada di kesempatan ini</p>
+
+				Menurutku ada <strong>5 things yang membuat </strong>nya
+			</section>
+			<section>
+				<ul>
+					<li>Kurang bersyukur</li>
+					<li>Lupa diri</li>
+					<li>Ego</li>
+					<li>Kedewasaan</li>
+					<li>Cara mengkomunikasikan</li>
+				</ul>
+			</section>
+			<section>
+				<h4>Kurang bersyukur</h4>
+				<blockquote style="font-size: 28px;">
+					Aku kurang bersyukur telah mengenal kamu yang baik banget, ga rewel, mandiri, ga sering repotin aku
+					kamu yang mau menerima banyak kekurangan dariku, kamu yang mengajarkanku banyak hal selama kita
+					pacaran kamu yang masih mau ngeluangin waktu gym walaupun kamu sibuk, kamu yang bawa aku kemana mana
+					selama aku disini bareng kamu aku kurang bersyukur atas itu semua atas cara kamu mencintai aku…
+				</blockquote>
+			</section>
+			<section>
+				<h4>Lupa diri</h4>
+				<blockquote style="font-size: 28px;">
+					aku lupa diri aku lupa bahwa banyak cerita yang udah kita rangkai banyak hal2 lucu yang udah kita
+					lalui, banyak pengalaman menarik yang kita jalani aku lupa hal itu, membuat aku jadi serakah membuat
+					aku menginginkan lebih lebih lagi padahal yang aku mau sebenarnya sudah terwujud di kamu…
+				</blockquote>
+			</section>
+			<section>
+				<h4>Ego</h4>
+				<blockquote style="font-size: 28px;">
+					Aku terlalu egois dengan tuntutan dan keiinginanku sendiri aku egois dengan standart yang ingin aku
+					capai yang sebenarnya ga harus begitu, yang bisa menemaniku makan di angkringan sehabis gym itu udah
+					cukup banget pada dasarnya…, aku egois dengan perasaanku sendiri .
+				</blockquote>
+			</section>
+			<section>
+				<h4>Kedewasaan</h4>
+				<blockquote style="font-size: 28px;">
+					Terkadang seolah2 aku terlihat dewasa, tapi banyak tindakan yang kulakukan bukan menunjukkan
+					kedewasaan banyak banget malah
+				</blockquote>
+			</section>
+			<section>
+				<h4>Cara mengkomunikasikan</h4>
+				<blockquote style="font-size: 28px;">
+					Aku menuntut banyak tentang komunikasi tapi aku ga sadar banyak caraku mengkomunikasikan sesuatu
+					seringkali salah, persepsiku yang sangat aku anggap benar ternyata itu adalah cara berkomunikasi
+					yang salah..
+				</blockquote>
+			</section>
+			<section>
+				<h4>MAAFIN AKUU!!</h4>
+				<img src="img/C558E2A3-6FCE-41D0-A255-604267FB4D9F.jpg" width="350">
+				
+			</section>
+			<section>
+				<div class="wrapenv">
+					<div class="i-love">
+						<div class="envelope"></div>
+						<div class="heart"></div>
+						<div class="text">I </br>Love YOU </br>SARAH TANYA!</div>
+						<div class="front"></div>
+						<div class="text2">- Mau ga kalau kita mulai dari awal lagi sayang... - </div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
