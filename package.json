@@ -8,6 +8,7 @@
   "module": "dist/reveal.esm.js",
   "license": "MIT",
   "scripts": {
+    "poststart": "npm prune --production",
     "test": "gulp test",
     "start": "gulp serve",
     "build": "gulp build"
